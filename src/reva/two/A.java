@@ -1,33 +1,29 @@
 package reva.two;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class A {
-  void m(){System.out.println("hello m");}
-  void n(){
-    System.out.println("hello n");
-//m();//same as this.m()
-    this.m();  // By default added by the compiler
-  }
+
+    public static void main(String[] args) {
+
+        Map m1 = new HashMap();
+        m1.put("Zara", "8");
+        m1.put("Mahnaz", "31");
+        m1.put("Ayan", "12");
+        m1.put("Daisy", "14");
+        System.out.println();
+        System.out.println(" Map Elements");
+        System.out.print("\t" + m1);
+
+    }
 }
-class Student{
-  int rollno;//instance variable
-  String name;
-  static String college ="ITS"; //static variable
-  //constructor
-  Student(int r, String n){
-    rollno = r;
-    name = n;
-  }
-  //method to display the values
-  void display (){System.out.println(rollno+" "+name+" "+college);}
-}
-//Test class to show the values of objects
- class TestStaticVariable1{
-  public static void main(String args[]){
-    Student s1 = new Student(111,"Karan");
-    Student s2 = new Student(222,"Aryan");
-    //we can change the college of all objects by the single line of code
-    //Student.college="BBDIT";
-    s1.display();
-    s2.display();
-  }
-}
+
+
+/*
+bonneville power
+corps of engineers
+pge
+paul van vean
+*/
+
